@@ -18,6 +18,24 @@ let PASSWORD = "";
 function sendMessage() {
     let message = sendMessageBox.value;
     let hexMessage = hexify(message);
+    
+    let messageObject = {
+        imei: IMEI,
+        username: USERNAME,
+        password: PASSWORD,
+        data: hexMessage
+    }
+    let preppedObject = JSON.stringify(messageObject);
+    
+    let xhr = new XMLHttpRequest();
+    xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+    
+    // send the collected data as JSON
+    xhr.send(JSON.stringify(data));
+    
+    xhr.onloadend = function () {
+        // done
+    };
 }
 
 function hexify(val) {
