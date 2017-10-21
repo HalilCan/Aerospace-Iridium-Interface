@@ -22,16 +22,28 @@
         <!-- Add your site or application content here -->
         <img src="favicon.ico"/>
 
-        <div id = "transceiver-setup">
-            <form>
-                IMEI: <input type="text" class = "setup-textbox" name="imei" id = "imei-box"><br>
-                Username: <input type="text" class = "setup-textbox" name="username" id = "username-box"><br>
-                Password: <input type="text" class = "setup-textbox" name="password" id = "password-box"><br>
-                <input type = "submit" class = "setup-button" name = "setup-submit" value = "Apply" id = "setup-submit-button">
-            </form>
+        <div id = "viewport">
+            <div id = "transceiver-setup">
+                <form id = "setup-form">
+                    IMEI: <input type="text" class = "setup-textbox" name="imei" id = "imei-box"><br>
+                    Username: <input type="text" class = "setup-textbox" name="username" id = "username-box"><br>
+                    Password: <input type="text" class = "setup-textbox" name="password" id = "password-box"><br>
+                    <input type = "button" onclick="applySettings()" class = "setup-button" name = "setup-submit" value = "Apply" id = "setup-submit-button">
+                </form>
+                <form id = "display-setup">
+                    <input type = "button" onclick="toggleSetup()" class = "setup-button" name = "display-setup-button" id = "display-setup-button" value = "O">
+                    <img src = "img/globe.gif" id = "globe-gif">
+                    </form>
+            </div>
+
+            <div id = "message-compiler">
+                <form>
+                    <input type="text" class = "message-textbox" name="message" id = "send-message-box">
+                    <input type = "submit" onclick = "sendMessage()" class = "message-button" name = "message-submit" value = "Send" id = "send-message-button">
+                </form>
+            </div>
+
         </div>
-
-
 
 
 

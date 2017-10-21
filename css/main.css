@@ -97,10 +97,90 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body {
+    background-color: black;
+    color:white;
+}
 
+form input {
+    background-color: black;
+    color: white;
+}
 
+#globe-gif {
+    width: 30vw;
+    height: auto;
+}
 
+#viewport {
+    width: 100vw;
+}
 
+#transceiver-setup {
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    text-align: right;
+}
+
+#display-setup {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    text-align: center;
+
+}
+
+#message-compiler {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.setup-textbox {
+    border: none;
+    border-bottom: .7px solid white;
+}
+
+.setup-textbox {
+    text-align: left;
+}
+
+#setup-submit-button {
+    border: .7px solid white;
+    border-radius: 3px;
+    margin-top: 3px;
+    background: transparent;
+}
+
+#send-message-button {
+    border: .7px solid white;
+    border-radius: 3px;
+    margin-top: 3px;
+    background: transparent;
+}
+
+#display-setup-button {
+    border: .7px solid white;
+    border-radius: 3px;
+    margin-top: 3px;
+    background: transparent;
+}
+
+#send-message-box {
+    border: none;
+    border-bottom: .7px solid white;
+}
+
+#display-setup-button {
+
+}
 
 
 
