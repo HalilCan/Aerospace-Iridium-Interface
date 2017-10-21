@@ -17,7 +17,7 @@ let PASSWORD = "";
 
 function sendMessage() {
     let message = sendMessageBox.value;
-    let hexMessage =
+    let hexMessage = hexify(message);
 }
 
 function hexify(val) {

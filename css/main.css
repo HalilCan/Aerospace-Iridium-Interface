@@ -132,7 +132,6 @@ form input {
     transform: translate(-50%, 0);
 
     text-align: center;
-
 }
 
 #message-compiler {
@@ -164,6 +163,7 @@ form input {
     border-radius: 3px;
     margin-top: 3px;
     background: transparent;
+    display:inline-block;
 }
 
 #display-setup-button {
@@ -174,8 +174,10 @@ form input {
 }
 
 #send-message-box {
+    display:inline-block;
     border: none;
     border-bottom: .7px solid white;
+    width: 300px;
 }
 
 #display-setup-button {
