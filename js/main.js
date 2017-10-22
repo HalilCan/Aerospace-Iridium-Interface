@@ -17,7 +17,7 @@ let sendMessageBox = document.getElementById("send-message-box");
 
 let IMEI = "imei";
 let USERNAME = "amnrd";
-let PASSWORD = "btc;
+let PASSWORD = "btc";
 
 let msgUrl = "https://core.rock7.com/rockblock/MT";
 let method = "POST";
