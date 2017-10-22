@@ -55,7 +55,7 @@ function sendMessage() {
         Console.log("Status: " + status);
         Console.log("Return data: " + data);
     };
-    request.open(method, url, async);
+    request.open(method, msgUrl, async);
     
     request.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
     // Or... request.setRequestHeader("Content-Type", "text/plain;charset=UTF-8");
