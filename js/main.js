@@ -59,6 +59,7 @@ function sendMessage() {
     
     // Or... request.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
     request.setRequestHeader("Content-Type", "text/plain;charset=UTF-8");
+    console.log("text/plain");
     // Or... whatever
     console.log(postData);
     // Actually sends the request to the server.
