@@ -57,8 +57,8 @@ function sendMessage() {
     };
     request.open(method, msgUrl, async);
     
-    request.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-    // Or... request.setRequestHeader("Content-Type", "text/plain;charset=UTF-8");
+    // Or... request.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+    request.setRequestHeader("Content-Type", "text/plain;charset=UTF-8");
     // Or... whatever
     console.log(postData);
     // Actually sends the request to the server.
