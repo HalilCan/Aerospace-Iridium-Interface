@@ -100,6 +100,7 @@ textarea {
 body {
     background-color: black;
     color:white;
+    font-family: Roboto, Helvetica, Sans-Serif;
 }
 
 form input {
@@ -108,7 +109,7 @@ form input {
 }
 
 #globe-gif {
-    width: 30vw;
+    width: 20vw;
     height: auto;
 }
 
@@ -120,6 +121,7 @@ form input {
     display: block;
     position: absolute;
     left: 50%;
+    top: 5%;
     transform: translate(-50%, 0);
 
     text-align: right;
@@ -184,6 +186,18 @@ form input {
 
 }
 
+#sent-message-list {
+    position: absolute;
+    text-align: center;
+    top: 70vh;
+    left: 50%;
+    width: 50vw;
+    transform: translate(-50%, 0);
+}
+
+#sent-message-table {
+    width: 100%;
+}
 
 
 

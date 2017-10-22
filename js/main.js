@@ -14,6 +14,7 @@ let displaySetupButton = document.getElementById("display-setup-button");
 
 let sendMessageButton = document.getElementById("send-message-button");
 let sendMessageBox = document.getElementById("send-message-box");
+let sentMessageTable = document.getElementById("sent-message-table");
 
 let IMEI = "imei";
 let USERNAME = "amnrd";
@@ -64,6 +65,14 @@ function sendMessage() {
     console.log(postData);
     // Actually sends the request to the server.
     request.send(postData);
+    let timeStamp = Date.now();
+    
+    sentMessageTable.innerHTML +=
+        "<tr>" +
+        "<th>"+message+"</th>" +
+        "<th>"+timeStamp+"</th>" +
+        "<th>"+"n/a"+"</th>" +
+        "</tr>"
 }
 
 function hexify(val) {
