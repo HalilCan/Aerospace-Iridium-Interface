@@ -52,15 +52,15 @@ function sendMessage() {
         
         let status = request.status;
         let data = request.responseText;
-        Console.log("Status: " + status);
-        Console.log("Return data: " + data);
+        console.log("Status: " + status);
+        console.log("Return data: " + data);
     };
     request.open(method, msgUrl, async);
     
     request.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
     // Or... request.setRequestHeader("Content-Type", "text/plain;charset=UTF-8");
     // Or... whatever
-    Console.log(postData);
+    console.log(postData);
     // Actually sends the request to the server.
     request.send(postData);
 }
