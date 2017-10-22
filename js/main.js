@@ -15,9 +15,9 @@ let displaySetupButton = document.getElementById("display-setup-button");
 let sendMessageButton = document.getElementById("send-message-button");
 let sendMessageBox = document.getElementById("send-message-box");
 
-let IMEI = "";
-let USERNAME = "";
-let PASSWORD = "";
+let IMEI = "300234064086500";
+let USERNAME = "amenarde@gmail.com";
+let PASSWORD = "balloonteamcomm";
 
 let msgUrl = "https://core.rock7.com/rockblock/MT";
 let method = "POST";
